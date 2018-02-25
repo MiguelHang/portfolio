@@ -1,0 +1,242 @@
+@font-face{
+	font-family:Blacksword;
+	font-style:"#F7B007";
+	src: url('./fonts/Blacksword.otf');
+}
+@font-face{
+	font-family:Quintus;
+	font-style:"#F7B007";
+	src: url('./fonts/Quintus_R_trial.otf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+	  font-family: Quintus;
+}
+
+html{
+    height:100%;
+    width: 100%;
+}
+body{
+    height:100%;
+    width: 100%;
+}
+
+.inicio{
+    height: 100%;
+    background-color: #4b4b4b;
+}
+#formacion{
+    height: 100%;
+    width: 100%;
+    background-color: #006fba;
+    display: flex;
+    justify-content: flex-end;
+}
+#trabajo{
+    height: 100%;
+    background-color:whitesmoke;
+    background-color: #4b4b4b;
+    display: flex;
+    justify-content: flex-end;
+}
+#contacto{
+    height: 100%;
+    width: 100%;
+    background-color: #006fba;
+    display: flex;
+    justify-content: flex-end;
+}
+.inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navInicio{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+    width: 85%;
+    padding-bottom: 5%;
+}
+.navInicioNegro{
+
+    display: flex;
+    flex-direction: row;
+   	justify-content: space-around;
+    width: 50%;
+    padding-bottom: 5%;
+}
+.navInicio a{
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.8);
+	transition: all 1s;
+	border-bottom: 3px solid transparent;
+	font-size: 18px;
+
+}
+.navInicio a:hover{
+	color: white;
+  border-color: #006fba;
+}
+.navInicioNegro a{
+	margin:1%;
+    text-decoration: none;
+    color: #444444;
+	transition: all 1s;
+	border-bottom: 3px solid transparent;
+	font-size: 18px;
+
+}
+.navInicioNegro a:hover{
+	color: #262525;
+  border-color:#262525;
+}
+.inicio img{
+    padding-bottom: 10%;
+    width: 600px;
+   justify-content: center;
+}
+
+.formacionDiv{
+    width: 50%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.trabajoDiv{
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: #006fba;
+}
+.contactoDiv{
+    width: 50%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.formacionDivCase{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    background-color: #006fba;
+}
+.trabajoDivCase{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+	bottom: 5%;
+    background-color: whitesmoke;
+}
+.contactoDivCase{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    background-color: #006fba;
+}
+a.destacar {
+	color:#262525;
+	border-bottom: 3px solid #262525;
+}
+p.pCase{
+	margin-bottom: 40%;
+	font-family: Blacksword;
+	font-size: 75px;
+}
+div.scroll{
+	overflow: scroll;
+	height: 100%;
+	width: 43%;
+	font-size: 22px;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 2%;
+	font-family: sans-serif;
+}
+.scroll >h3{
+	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 2%;
+}
+.scroll >p{
+	margin-bottom: 3%;
+}
+p > img{
+	max-width: 10vw;
+}
+.scroll >p a{
+	text-decoration: none;
+	color:#0080ff;
+}
+/* .trabajoDiv article{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	padding-top: 50%;
+	color:rgba(0, 0, 0, 0.56);
+	font-weight: bolder;
+	font-size: 18px;
+	margin-bottom: 0;
+	transition: all 2s;
+
+}
+.trabajoDiv article:hover{
+	color:#000000;
+	font-weight: bolder;
+	font-size: 26px;
+}
+.trabajo1{
+	background-image: url('./img/awhCbhLqRceCdjcPQUnn_IMG_02491.jpg');
+}
+.trabajo2{
+	background-image: url('./img/coding-924920_1920.jpg');
+}
+.trabajo3{
+	background-image: url('./img/slider-background.jpg');
+} */
+
+.cardTrabajo {
+  margin: 15px;
+  background: #ffff;
+  min-height: 30%;
+}
+
+.imgCenter{
+	padding-left: 39%;
+}
+.contactoDiv img{
+	width: 64px;
+}
+.social{
+	padding-top: 25%;
+	text-align: center;
+}
+::-webkit-scrollbar {
+      width: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+    .trabajoDivCase { display: none }
+    .formacionDivCase { display: none }
+    .contactoDivCase { display: none }
+    .formacionDiv { width: 100%}
+    div .scroll { width: 100%}
+    .trabajoDiv { width: 100%}
+
+    p > img{
+    	max-width: 18vw;
+    }
+}
